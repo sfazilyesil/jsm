@@ -67,8 +67,8 @@ It("should match with the schema", func(){
 ```
 
 - **Loader Inputs**
-<br/>
-Asume there is a *schema.json* file exists in the project test directory.
+
+Asume there is a schema.json file in the project test directory.
 We create a reference loader which loads that schema file and then 
 give it to the matcher.
 
@@ -87,7 +87,6 @@ It("should match with the schema", func(){
 ```
 
 <br/>
----
 
 
 ### Links
