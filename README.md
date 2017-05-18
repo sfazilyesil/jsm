@@ -5,9 +5,13 @@ Gomega Matcher for JSON Schema Draft v4 - go language.
 Providing a Gomega Matcher originally intended to use with [Ginkgo](http://onsi.github.io/ginkgo) golang BDD test 
 framework when validating a JSON document against a [JSON schema](http://json-schema.org/) in tests.
 
+<br/>
+
 ### Dependencies
 - It depends on the [gojsonschema](https://github.com/xeipuuv/gojsonschema) for validating JSON documents.
 - It implements GomegaMatcher interface so depends on [Gomega](https://github.com/onsi/gomega)
+
+<br/>
 
 ### Installation
 ```bash
@@ -15,6 +19,8 @@ go get github.com/onsi/gomega/
 go get github.com/xeipuuv/gojsonschema
 go get github.com/sfazilyesil/jsm
 ```
+
+<br/>
 
 ### Usage
 It supports all the loader types that gojsonschema provides.
@@ -61,10 +67,11 @@ It("should match with the schema", func(){
 ```
 
 - **Loader Inputs**
-<br>
+<br/>
 Asume there is a *schema.json* file exists in the project test directory.
 We create a reference loader which loads that schema file and then 
 give it to the matcher.
+
 ```go
 It("should match with the schema", func(){
    jsonDoc := `{"id":1, "name":"product 1"}`
@@ -79,7 +86,12 @@ It("should match with the schema", func(){
 })
 ```
 
+<br/>
+---
+
+
 ### Links
+
 - https://github.com/onsi/gomega
 - http://onsi.github.io/ginkgo
 - https://github.com/xeipuuv/gojsonschema
